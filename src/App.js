@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Button } from 'reactstrap';
+import Dataload from './compoments/Dataload';
+import Search from './compoments/Search';
+// https://s3-ap-southeast-1.amazonaws.com/he-public-data/books8f8fe52.json
+ 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Search></Search> */}
+      <Dataload/>
     </div>
   );
 }
